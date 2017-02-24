@@ -34,10 +34,11 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		</div>
 
 		<h4>Projects</h4>
-		{{#each projects}}
-			{{#if min}}
+		{{#if min}}
 			Min!<button class="likeBtn">Like</button>
-			{{else}}
+		{{else}}			
+			{{#each projects}}
+
 				<div class="project" id="{{id}}">
 					<div class="thumbnail">
 						<a href="/project/{{id}}">
@@ -48,9 +49,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 						<div class="details"></div>
 					</div>
 				</div>
-			{{/if}}
 		{{/each}}
 
+		{{/if}}
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>

@@ -10,5 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	ga('create', UA-31415926-1', 'auto');
+	ga('send', 'pageview');
 	ga('send','event','like','click');
 }
